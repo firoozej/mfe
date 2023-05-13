@@ -1,5 +1,2 @@
-auth/node_modules/
-marketing/node_modules/
-container/node_modules/
-styleguide/node_modules/
-dashboard/node_modules/
+node_modules
+dist
