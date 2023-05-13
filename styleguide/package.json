@@ -1,10 +1,11 @@
 {
     "name": "styleguide",
     "version": "1.0.0",
-    "main": "src/index.js",
+    "main": "dist/cjs/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack serve --config config/webpack.dev.js",
+        "build": "npm run build-cjs && npm run build-esm",
+        "build-cjs": "rimraf ./dist/cjs && tsc --outDir dist/cjs",
+        "build-esm": "rimraf ./dist/esm && tsc --outDir dist/esm --module es2015",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
@@ -24,6 +25,8 @@
         "@storybook/react": "^7.0.11",
         "@storybook/react-vite": "^7.0.11",
         "@storybook/testing-library": "^0.0.14-next.2",
+        "@types/react": "^17.0.59",
+        "@types/react-dom": "^18.2.4",
         "babel-loader": "^8.1.0",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^5.0.0",
@@ -33,6 +36,7 @@
         "react-dom": "^17.0.1",
         "storybook": "^7.0.11",
         "style-loader": "^2.0.0",
+        "typescript": "^5.0.4",
         "webpack": "^5.4.0",
         "webpack-cli": "^4.1.0",
         "webpack-dev-server": "^3.11.0",
