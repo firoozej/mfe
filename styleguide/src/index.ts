@@ -10,6 +10,10 @@ import Container from "@material-ui/core/Container"
 import MaterialLink from "@material-ui/core/Link"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
+import Box from "@material-ui/core/Box"
+import CardHeader from "@material-ui/core/CardHeader"
+import Link from "@material-ui/core/Link"
+import StarIcon from "@material-ui/icons/Star"
 
 export {
     Button,
@@ -17,6 +21,7 @@ export {
     CardActions,
     CardContent,
     CardMedia,
+    CardHeader,
     Grid,
     Typography,
     makeStyles,
@@ -24,4 +29,7 @@ export {
     MaterialLink,
     AppBar,
     Toolbar,
+    Box,
+    Link,
+    StarIcon,
 }
