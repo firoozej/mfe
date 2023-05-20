@@ -1,6 +1,6 @@
 import React from "react"
 import { Link as RouterLink } from "react-router-dom"
-import { AppBar, Button, Toolbar, Typography, makeStyles } from "styleguide"
+import { AppBar, Button, Toolbar, Typography, makeStyles } from "@firoozej/styleguide"
 
 const useStyles = makeStyles((theme) => ({
     "@global": {
