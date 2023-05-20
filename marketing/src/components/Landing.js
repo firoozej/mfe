@@ -10,7 +10,7 @@ import {
     makeStyles,
     Container,
     MaterialLink,
-} from "styleguide"
+} from "@firoozej/styleguide"
 import { Link } from "react-router-dom"
 
 function Copyright() {
