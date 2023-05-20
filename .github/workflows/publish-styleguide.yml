@@ -1,4 +1,4 @@
-name: publish styleguide package
+name: publish-styleguide-package
 
 on:
     push:
@@ -34,6 +34,7 @@ jobs:
                   node-version: 16
                   registry-url: https://npm.pkg.github.com/
             - run: npm ci
+            - run: npm run build
             - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.MFE_GITHUB_TOKEN}}
