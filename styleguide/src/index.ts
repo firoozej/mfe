@@ -14,6 +14,10 @@ import Box from "@material-ui/core/Box"
 import CardHeader from "@material-ui/core/CardHeader"
 import Link from "@material-ui/core/Link"
 import StarIcon from "@material-ui/icons/Star"
+import {
+    StylesProvider,
+    createGenerateClassName,
+  } from '@material-ui/core/styles';
 
 export {
     Button,
@@ -32,4 +36,6 @@ export {
     Box,
     Link,
     StarIcon,
+    StylesProvider,
+    createGenerateClassName
 }
