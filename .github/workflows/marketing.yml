@@ -17,8 +17,8 @@ jobs:
 
         steps:
             - uses: actions/checkout@v2
-            - run: //npm.pkg.github.com/:_authToken=${{ secrets.MFE_GITHUB_TOKEN }}" > ~/.npmrc
-            - run: npm install
+            - run: echo "@firoozej:registry=https://npm.pkg.github.com" > ~/.npmrc
+            - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.MFE_GITHUB_TOKEN }}" > ~/.npmrc
             - run: npm run build
 
             - uses: shinyinc/action-aws-cli@v1.2

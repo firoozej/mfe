@@ -17,6 +17,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v2
+            - run: echo "@firoozej:registry=https://npm.pkg.github.com" > ~/.npmrc
             - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.MFE_GITHUB_TOKEN }}" > ~/.npmrc
             - run: npm install
             - run: npm run build
