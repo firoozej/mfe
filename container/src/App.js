@@ -27,7 +27,7 @@ export default () => {
                     </Route>
                     <Route path="/dashboard">
                         {!isSignedIn && <Redirect to="/" />}
-                        <>hey dashboard</>
+                        <>hey dashboard!</>
                     </Route>
                     <Route path="/">
                         <MarketingLazy isSignedIn={isSignedIn} />
