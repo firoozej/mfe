@@ -1,0 +1,1 @@
+lerna version --no-private
